@@ -25,11 +25,11 @@
     console.log("Syncronos Call");
 }
 // Exercise 2
-function exercise2(){
- 
+function exercise2(){ 
      const todayDate = new Date();
-     const day = todayDate.getDay();     
-     return (day%6==0) ?  "weekEnd" : "weekDay"
+     const day = todayDate.getDay();
+     const isWeekend = ['weekEnd', 'weekDay', 'weekDay','weekDay','weekDay','weekDay','weekEnd']
+     return isWeekend[day];
   
 }
 // // Exercise 3
@@ -40,17 +40,12 @@ function exercise3(){
      "category": "food",
      "price": 2.0
   }
-  let applyCoupon = function(food){
-    return function(discount){
-      return function(price){
-        if(price) {
-          return item;
-        }
-      }
-    }
+  const applyCoupon = category => discount => item => {
+    item.price -= (item.price * discount);
+    return item;
   }
 
- console.log(applyCoupon("food")(0.1)(item).price === 1.8)
+ console.log(applyCoupon("food")(0.1)(item).price === 2.0)
 
 }
 exercise1();
