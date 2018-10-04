@@ -38,7 +38,7 @@ Array.prototype.odd= function(){
      console.log(arr);
     })
 }
-console.log('Start');
+console.log('start');
 [1,2,3,4,5,6,7,8].event();
 [1,2,3,4,5,6,7,8].odd();
 console.log('end')
