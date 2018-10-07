@@ -11,9 +11,9 @@ app.get('/users', function(req,res){
    promise.then(data => data.json()).then(json => res.json(json));
    //observers
    of(promise).subscribe((e)=> console.log("el dato", e.then(data => data.json()).then(json => res.json(json))))
-   //Away , async fucntion
+   //Away , async function
    (async function () {
-        const data = await fetch(url);
+        const data = await promise;
         const json = await data.json();
         res.json(json)
     })();
