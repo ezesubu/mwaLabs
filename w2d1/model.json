@@ -1,0 +1,572 @@
+{
+    "GUID": "91d9a290-cb33-11e8-943e-5b3f6ed8d10e",
+    "lastModifTS": "2018-10-08T20:04:39.765Z",
+    "persistenceSchemaVersion": "2",
+    "description": "",
+    "comments": "",
+    "author": "",
+    "version": "",
+    "collections": [
+        {
+            "GUID": "95d5af60-cb33-11e8-943e-5b3f6ed8d10e",
+            "type": "object",
+            "description": "",
+            "comments": "",
+            "$schema": "",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "type": "string",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "format": "",
+                    "default": "",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "",
+                    "GUID": "be612bd0-cb33-11e8-943e-5b3f6ed8d10e",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "ISBN",
+                    "error": {
+                        "name": false
+                    }
+                },
+                {
+                    "type": "string",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "format": "",
+                    "default": "",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "",
+                    "GUID": "ced92cb0-cb33-11e8-943e-5b3f6ed8d10e",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "author",
+                    "error": {
+                        "name": false
+                    }
+                },
+                {
+                    "type": "array",
+                    "properties": [
+                        {
+                            "type": "string",
+                            "minLength": "",
+                            "maxLength": "",
+                            "pattern": "",
+                            "format": "",
+                            "default": "",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "childRelationships": [],
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "enum": [],
+                            "sample": "",
+                            "GUID": "eff82db0-cb33-11e8-943e-5b3f6ed8d10e",
+                            "description": "",
+                            "comments": "",
+                            "required": false,
+                            "id": "",
+                            "arrayItem": true,
+                            "arrayParentType": "array"
+                        }
+                    ],
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "additionalItems": true,
+                    "minItems": "",
+                    "maxItems": "",
+                    "uniqueItems": false,
+                    "enum": [],
+                    "GUID": "efe08700-cb33-11e8-943e-5b3f6ed8d10e",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "Keywords",
+                    "error": {
+                        "name": false
+                    }
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [
+                        "2ae16580-cb35-11e8-943e-5b3f6ed8d10e"
+                    ],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "sample": "",
+                    "GUID": "ca0763e0-cb34-11e8-943e-5b3f6ed8d10e",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "id"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "95d73600-cb33-11e8-943e-5b3f6ed8d10e"
+            },
+            "collectionName": "book",
+            "capped": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "size": "",
+            "max": "",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "key": "",
+                "hashed": false,
+                "unique": true,
+                "numInitialChunks": "",
+                "collation": "null",
+                "zone": "",
+                "comments": ""
+            }
+        },
+        {
+            "GUID": "0af3ae00-cb34-11e8-943e-5b3f6ed8d10e",
+            "type": "object",
+            "description": "",
+            "comments": "",
+            "$schema": "",
+            "additionalProperties": true,
+            "properties": [
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "sample": "",
+                    "GUID": "da447ea0-cb34-11e8-943e-5b3f6ed8d10e",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "id",
+                    "error": {
+                        "name": false
+                    }
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "2ae16580-cb35-11e8-943e-5b3f6ed8d10e",
+                    "childRelationships": [],
+                    "foreignCollection": "95d5af60-cb33-11e8-943e-5b3f6ed8d10e",
+                    "foreignField": [
+                        "95d5af60-cb33-11e8-943e-5b3f6ed8d10e",
+                        "ca0763e0-cb34-11e8-943e-5b3f6ed8d10e"
+                    ],
+                    "sample": "",
+                    "GUID": "2536be50-cb35-11e8-943e-5b3f6ed8d10e",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "book",
+                    "error": {
+                        "name": false
+                    }
+                },
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "4450c790-cb35-11e8-943e-5b3f6ed8d10e",
+                    "childRelationships": [],
+                    "foreignCollection": "3fdbd6b0-cb34-11e8-943e-5b3f6ed8d10e",
+                    "foreignField": [
+                        "3fdbd6b0-cb34-11e8-943e-5b3f6ed8d10e",
+                        "e18703e0-cb34-11e8-943e-5b3f6ed8d10e"
+                    ],
+                    "sample": "",
+                    "GUID": "3b7a0dc0-cb35-11e8-943e-5b3f6ed8d10e",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": true,
+                    "id": "",
+                    "name": "student",
+                    "error": {
+                        "name": false
+                    }
+                },
+                {
+                    "type": "date",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "default": "",
+                    "format": "",
+                    "sample": "",
+                    "GUID": "49ee9d80-cb35-11e8-943e-5b3f6ed8d10e",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "date_start",
+                    "error": {
+                        "name": false
+                    }
+                },
+                {
+                    "type": "date",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "default": "",
+                    "format": "",
+                    "sample": "",
+                    "GUID": "5966e1a0-cb35-11e8-943e-5b3f6ed8d10e",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "date_end",
+                    "error": {
+                        "name": false
+                    }
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "0af95350-cb34-11e8-943e-5b3f6ed8d10e"
+            },
+            "collectionName": "borrow",
+            "capped": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "size": "",
+            "max": "",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "key": "",
+                "hashed": false,
+                "unique": true,
+                "numInitialChunks": "",
+                "collation": "null",
+                "zone": "",
+                "comments": ""
+            }
+        },
+        {
+            "GUID": "3fdbd6b0-cb34-11e8-943e-5b3f6ed8d10e",
+            "type": "object",
+            "description": "",
+            "comments": "",
+            "$schema": "",
+            "additionalProperties": false,
+            "properties": [
+                {
+                    "type": "objectId",
+                    "format": "",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [
+                        "4450c790-cb35-11e8-943e-5b3f6ed8d10e"
+                    ],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "sample": "",
+                    "GUID": "e18703e0-cb34-11e8-943e-5b3f6ed8d10e",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "id",
+                    "error": {
+                        "name": false
+                    }
+                },
+                {
+                    "type": "string",
+                    "minLength": "",
+                    "maxLength": "",
+                    "pattern": "",
+                    "format": "",
+                    "default": "",
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "enum": [],
+                    "sample": "",
+                    "GUID": "18688b90-cb35-11e8-943e-5b3f6ed8d10e",
+                    "description": "",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "name",
+                    "error": {
+                        "name": false
+                    }
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "3fe52580-cb34-11e8-943e-5b3f6ed8d10e"
+            },
+            "collectionName": "student",
+            "capped": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "size": "",
+            "max": "",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "key": "",
+                "hashed": false,
+                "unique": true,
+                "numInitialChunks": "",
+                "collation": "null",
+                "zone": "",
+                "comments": ""
+            }
+        }
+    ],
+    "buckets": [],
+    "views": [],
+    "relationships": [
+        {
+            "GUID": "2ae16580-cb35-11e8-943e-5b3f6ed8d10e",
+            "name": "fk book.id to borrow.New Field",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "95d5af60-cb33-11e8-943e-5b3f6ed8d10e",
+            "parentField": [
+                "95d5af60-cb33-11e8-943e-5b3f6ed8d10e",
+                "ca0763e0-cb34-11e8-943e-5b3f6ed8d10e"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "0af3ae00-cb34-11e8-943e-5b3f6ed8d10e",
+            "childField": [
+                "0af3ae00-cb34-11e8-943e-5b3f6ed8d10e",
+                "2536be50-cb35-11e8-943e-5b3f6ed8d10e"
+            ],
+            "childCardinality": "1"
+        },
+        {
+            "GUID": "4450c790-cb35-11e8-943e-5b3f6ed8d10e",
+            "name": "fk student.id to borrow.student",
+            "description": "",
+            "comments": "",
+            "relationshipType": "Foreign Key",
+            "parentCollection": "3fdbd6b0-cb34-11e8-943e-5b3f6ed8d10e",
+            "parentField": [
+                "3fdbd6b0-cb34-11e8-943e-5b3f6ed8d10e",
+                "e18703e0-cb34-11e8-943e-5b3f6ed8d10e"
+            ],
+            "parentCardinality": "1",
+            "childCollection": "0af3ae00-cb34-11e8-943e-5b3f6ed8d10e",
+            "childField": [
+                "0af3ae00-cb34-11e8-943e-5b3f6ed8d10e",
+                "3b7a0dc0-cb35-11e8-943e-5b3f6ed8d10e"
+            ],
+            "childCardinality": "1"
+        }
+    ],
+    "users": [],
+    "idToNameHashTable": {
+        "95d5af60-cb33-11e8-943e-5b3f6ed8d10e": "book",
+        "be612bd0-cb33-11e8-943e-5b3f6ed8d10e": "ISBN",
+        "ced92cb0-cb33-11e8-943e-5b3f6ed8d10e": "author",
+        "efe08700-cb33-11e8-943e-5b3f6ed8d10e": "Keywords",
+        "0af3ae00-cb34-11e8-943e-5b3f6ed8d10e": "borrow",
+        "3fdbd6b0-cb34-11e8-943e-5b3f6ed8d10e": "student",
+        "ca0763e0-cb34-11e8-943e-5b3f6ed8d10e": "id",
+        "da447ea0-cb34-11e8-943e-5b3f6ed8d10e": "id",
+        "e18703e0-cb34-11e8-943e-5b3f6ed8d10e": "id",
+        "18688b90-cb35-11e8-943e-5b3f6ed8d10e": "name",
+        "2536be50-cb35-11e8-943e-5b3f6ed8d10e": "book",
+        "2ae16580-cb35-11e8-943e-5b3f6ed8d10e": "fk book.id to borrow.New Field",
+        "3b7a0dc0-cb35-11e8-943e-5b3f6ed8d10e": "student",
+        "4450c790-cb35-11e8-943e-5b3f6ed8d10e": "fk student.id to borrow.student",
+        "49ee9d80-cb35-11e8-943e-5b3f6ed8d10e": "date_start",
+        "5966e1a0-cb35-11e8-943e-5b3f6ed8d10e": "date_end"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "91d9a291-cb33-11e8-943e-5b3f6ed8d10e"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "91d9a292-cb33-11e8-943e-5b3f6ed8d10e"
+    },
+    "modelName": "New Model",
+    "dbVersion": "v4.0",
+    "dbVendor": "MongoDB",
+    "hideModelViews": true,
+    "appTarget": "MONGODB",
+    "creationTS": "2018-10-08T19:51:38.553Z",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "95d5af60-cb33-11e8-943e-5b3f6ed8d10e",
+                        "x": 40,
+                        "y": 40,
+                        "width": 240,
+                        "height": 119,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "0af3ae00-cb34-11e8-943e-5b3f6ed8d10e",
+                        "x": 340,
+                        "y": 276,
+                        "width": 240,
+                        "height": 100,
+                        "color": {
+                            "hsl": {
+                                "h": 35.669291338582674,
+                                "s": 1,
+                                "l": 0.5019607843137255,
+                                "a": 1
+                            },
+                            "hex": "#ff9801",
+                            "rgb": {
+                                "r": 255,
+                                "g": 152,
+                                "b": 1,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 35.669291338582674,
+                                "s": 0.996078431372549,
+                                "v": 1,
+                                "a": 1
+                            },
+                            "oldHue": 35.669291338582674,
+                            "source": "hex"
+                        }
+                    },
+                    {
+                        "GUID": "3fdbd6b0-cb34-11e8-943e-5b3f6ed8d10e",
+                        "x": 738,
+                        "y": 167,
+                        "width": 240,
+                        "height": 100,
+                        "color": {
+                            "hsl": {
+                                "h": 290.8029197080292,
+                                "s": 0.631336405529954,
+                                "l": 0.42549019607843136,
+                                "a": 1
+                            },
+                            "hex": "#9c28b1",
+                            "rgb": {
+                                "r": 156,
+                                "g": 40,
+                                "b": 177,
+                                "a": 1
+                            },
+                            "hsv": {
+                                "h": 290.8029197080292,
+                                "s": 0.7740112994350282,
+                                "v": 0.6941176470588235,
+                                "a": 1
+                            },
+                            "oldHue": 290.8029197080292,
+                            "source": "hex"
+                        }
+                    }
+                ],
+                "buckets": [],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": []
+                }
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "details": true
+        }
+    }
+}
