@@ -1,6 +1,6 @@
 const dbService = require('./examples.db.service');
 
-class ExamplesService {
+class GradeService {
   all() {
     return dbService.all();
   }
@@ -16,4 +16,4 @@ class ExamplesService {
   }
 }
 
-module.exports = new ExamplesService();
+module.exports = new GradeService();
