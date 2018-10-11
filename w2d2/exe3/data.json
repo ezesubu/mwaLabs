@@ -1,0 +1,34 @@
+[{
+    "name": "Mum",
+    "category": "Fairfield",
+    "location": [-91.971925,41.0164653]
+},{
+    "name": "Utopia Park",
+    "category": "Fairfield",
+    "location": [-91.968824,41.016352]
+},
+{
+    "name": "EveryBodys",
+    "category": "Fairfield",
+    "location": [-91.0062919,41.9656607]
+},
+{
+    "name": "Cementery",
+    "category": "Fairfield",
+    "location": [-91.9728486,41.0167318]
+},
+{
+	"name": "Pleasant Lage",
+	"category": "Fairfield",
+	"location": [-91.9595115,41.0235198]
+},
+{
+	"name": "Walmark Fairfield",
+	"category": "Fairfield",
+	"location": [-91.9815388,41.0073268]
+},
+{
+	"name": "Jefferson County Health Center",
+	"category": "Fairfield",
+	"location": [-91.9771467,41.9771467]
+}]

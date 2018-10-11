@@ -1,0 +1,5 @@
+//i have created tree indexs each for one collection , and ordered the way how a thing is searching 
+
+db.books.createIndex('ISBN', 'Author', 'Keywords')
+db.borow.createIndex('student', 'student', 'date_start')
+db.book.createIndex('name')
