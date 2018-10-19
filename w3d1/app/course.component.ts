@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ThrowStmt } from '@angular/compiler';
 
 @Component({
@@ -7,17 +7,15 @@ import { ThrowStmt } from '@angular/compiler';
   <button type="button" (click)="decreaseValue()">
      -
   </button>
-  {{counterValue}}
   <button type="button" (click)="increaseValue()">
     +
-  </button>`,
-  styleUrls: ['./course.component.css']
+  </button>
+  <input [value]="counterValue" (input)="counterValue=$event.target.value" >
+  <p> Component Counter value = {{counterValue}}</p>
+  `,
 })
-export class CourseComponent implements OnInit {
-  private counterValue;
-  constructor() {
-    this.counterValue = 0;
-  }
+export class CourseComponent {
+  public counterValue = 0;
   increaseValue(val) {
     this.counterValue++;
   }
@@ -26,8 +24,5 @@ export class CourseComponent implements OnInit {
     this.counterValue = this.counterValue - 1;
   }
 
-
-  ngOnInit() {
-  }
 
 }

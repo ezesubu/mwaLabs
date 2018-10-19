@@ -9,6 +9,6 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to exe1!');
+    expect(page.getParagraphText()).toEqual('Welcome to w3d2!');
   });
 });
