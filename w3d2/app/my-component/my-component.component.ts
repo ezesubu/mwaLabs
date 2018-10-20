@@ -3,7 +3,7 @@ console.log('really is a joke');
 @Component({
   selector: 'app-my-component',
   template: `<ul>
-  <li  [appMyvisibility] [appMyNewColor]='color'
+  <li [appMyvisibility] [appMyNewColor]='color'
   *ngFor="let item of beforeDied">{{item}}</li>
 </ul>
 `,
